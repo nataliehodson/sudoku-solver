@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-color: #240519;
+  height: 100vh;
+  width: 100vw;
 }
 
 .App-logo {
@@ -14,14 +17,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #F9F2DC;
+}
+
+h1 {
+  text-shadow: 3px 3px #BB8B8E;
+  font-size: 70px;
 }
 
 .App-link {
@@ -37,16 +44,46 @@
   }
 }
 
-.sudoku-grid {
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sudoku-container {
   --length-side: 50vw;
   width: var(--length-side);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sudoku-grid {
   height: var(--length-side);
-  margin-top: 50px;
-  margin-left: 50px;
-  border: solid;
   display: grid;
   grid-template-columns: repeat(9, auto);
   grid-gap: 0;
 }
 
+.button-container {
+  width: var(--length-side);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.button-container button {
+  height: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: #BB8B8E;
+  color: #F9F2DC;
+  border: none;
+  border-radius: 5px;
+}
+
+.clear-button {
+  margin-right: 40px;
+}

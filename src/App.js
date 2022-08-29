@@ -12,8 +12,14 @@ function App() {
         <img className='brightness'/>
       </header>
       <body>
-        <div className='sudoku-grid'>
-          <Cells />
+        <div className='sudoku-container'>
+          <div className='sudoku-grid'>
+            <Cells />
+          </div>
+          <div className='button-container'>
+            <button className='clear-button'>Clear</button>
+            <button>Submit</button>
+          </div>
         </div>
       </body>
     </div>
