@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { ReactDOM } from 'react';
 import './App.css';
-import Cells from './Cells/Cells'
+import Cells from './Cells/Cells';
+import ClearButton from './Buttons/ClearButton';
+import SubmitButton from './Buttons/SubmitButton'
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,15 +15,9 @@ function App() {
         <img className='brightness'/>
       </header>
       <body>
-        <div className='sudoku-container'>
-          <div className='sudoku-grid'>
+        <form id='sudoku-container' className='sudoku-container'>
             <Cells />
-          </div>
-          <div className='button-container'>
-            <button className='clear-button'>Clear</button>
-            <button>Submit</button>
-          </div>
-        </div>
+        </form>
       </body>
     </div>
   );

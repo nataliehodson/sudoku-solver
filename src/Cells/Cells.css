@@ -28,3 +28,31 @@
 [data-col='8'] {
     border-right: 2px solid #AC7275;
 }
+
+.sudoku-grid {
+    height: var(--length-side);
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-gap: 0;
+  }
+  
+  .button-container {
+    width: var(--length-side);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.button-container button {
+    height: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-color: #BB8B8E;
+    color: #F9F2DC;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .clear-button {
+    margin-right: 40px;
+  }
