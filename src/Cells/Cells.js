@@ -55,8 +55,8 @@ const Cells = () => {
             <div className='button-container'>
                 {/*<ClearButton />
                 <SubmitButton />*/}
-                <button id='clear' type='button' className='clear-button' onClick={setTimeout(clearGrid, 1)}>Clear</button>
-                <button type='button' onClick={() => onSubmit()}>Submit</button>
+                <button id='clear' type='button' className='clear-button' onClick={()=> clearGrid()}>Clear</button>
+                <button type='button' onClick={() => onSubmit()}>Solve</button>
             </div>
         </>
         
